@@ -1,7 +1,7 @@
 {
   "name": "generator-castrum",
   "version": "0.0.0",
-  "description": "A generator for creating a Sass responsive grid system for HTML5 Apps",
+  "description": "A Yeoman generator for creating a Sass responsive grid system for HTML5 Apps",
   "keywords": [
     "yeoman-generator", "sass", "responsive", "gridsystem", "compass"
   ],
