@@ -1,4 +1,5 @@
-# generator-castrum [![Build Status](https://secure.travis-ci.org/ntreadway/generator-castrum.png?branch=master)](https://travis-ci.org/ntreadway/generator-castrum)
+
+# generator-castrum [![Build Status](https://secure.travis-ci.org/yeti-media/generator-castrum.png?branch=master)](https://travis-ci.org/yeti-media/generator-castrum)
 
 A generator for [Yeoman](http://yeoman.io).
 
@@ -45,3 +46,6 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+=======
+castrum
+=======
