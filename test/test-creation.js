@@ -23,11 +23,16 @@ describe('castrum generator', function () {
         var expected = [
             // add files you expect to exist here.
             '.jshintrc',
-            '.editorconfig'
+            '.editorconfig',
+            'app/styles/castrum/_castrum-grid.scss',
+            'app/styles/castrum/_mixins.scss',
+            'app/styles/castrum/_state.scss',
+            'app/styles/castrum/_variables.scss',
+            'app/styles/castrum/castrum.scss'
         ];
 
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            'castrum': true
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {
