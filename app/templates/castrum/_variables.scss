@@ -1,0 +1,9 @@
+// Carstrum grid
+$line: 24 !default;
+$column: 100% / 12 !default;
+$font-size: 16 !default;
+$rem: $font-size * 1 !default;
+$padding: 0 #{($line/2)/$rem}rem;
+$total-sm-cols: 4 !default;
+$total-md-cols: 12 !default;
+$total-lg-cols: 24 !default;

@@ -1,0 +1,122 @@
+// Mobile
+@mixin kill-mobile-zoom {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+}
+
+@mixin kill-tap-highlight {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+// Misc
+@mixin background-size ($width:auto, $height:auto) {
+  -webkit-background-size: $width $height;
+  -moz-background-size: $width $height;
+  -o-background-size: $width $height;
+  background-size: $width $height;
+}
+
+// Device targeting
+
+@mixin high-res {
+/* Retina display and other high pixel ratio devices ----------- */
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+/* Medium screens */
+
+@mixin small-landscape {
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin medium-screen {
+  @media only screen and (min-width: 768px) and (max-width: 1111px) {
+    @content
+  }
+}
+
+@mixin iphone5-landscape {
+   @media only screen and (min-width: 560px) and (max-device-width: 1136px) and (orientation:landscape) {
+    @content;
+   }
+}
+
+@mixin ipad-landscape {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape){
+    @content;
+  }
+}
+
+@mixin ipad-portrait {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    @content;
+  }
+}
+
+@mixin show-it {
+  height: auto;
+  visibility: visible;
+  @include opacity(1);
+}
+
+@mixin hide-it {
+  height: 0;
+  padding: 0;
+  width: 0 !important;
+  position: absolute;
+  -webkit-transform: translate3d(-9999rem,0,0);
+  -moz-transform: translate3d(-9999rem,0,0);
+  transform: translate3d(-9999rem,0,0);
+  @include opacity(0);
+}
+
+// Castrum grid
+@mixin respond($size, $type:min-width) {
+  @media only screen and ($type: $size) {
+    @content;
+  }
+}
+
+@mixin grid-sm {
+
+  @for $i from 1 through $total-sm-cols {
+    .c-sm-#{$i} {
+      width: colWidth($colNum:$i, $totalCols:$total-sm-cols);
+    }
+  }
+}
+
+@mixin grid-md {
+
+  @for $i from 1 through $total-md-cols {
+    .c-md-#{$i} {
+      width: colWidth($colNum:$i, $totalCols:$total-md-cols);
+    }
+  }
+}
+
+@mixin grid-lg {
+
+  @for $i from 1 through $total-lg-cols {
+    .c-lg-#{$i} {
+      width: colWidth($colNum:$i, $totalCols:$total-lg-cols);
+    }
+  }
+}
+
+// Functions
+@function calc-rem($target-px, $base: $font-size) {
+  @return ($target-px / $base) * 1rem;
+}
+
+@function colWidth($colNum, $totalCols) {
+  @return percentage(($colNum / $totalCols));
+}

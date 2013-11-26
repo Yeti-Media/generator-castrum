@@ -1,0 +1,47 @@
+// Small screens
+@include respond($type: max-width, $size: 48em) {
+  .show-if-small {
+    @include show-it;
+  }
+  .hide-if-small {
+    @include hide-it;
+  }
+}
+
+// Medium screens
+@include medium-screen {
+  .show-if-medium {
+    @include show-it;
+  }
+  .hide-if-medium {
+    @include hide-it;
+  }
+}
+
+// Landscape orientation
+@include respond(orientation, landscape) {
+  .show-if-landscape {
+    @include show-it;
+  }
+  .hide-if-landscape {
+    @include hide-it;
+  }
+}
+
+
+
+// Portrait orientation
+@include respond(orientation, portrait) {
+  .show-if-portrait {
+    @include show-it;
+  }
+  .hide-if-portrait {
+  @include hide-it;
+  }
+}
+
+@include respond($size: calc-rem(1112)) {
+  .hide-if-desktop {
+    @include hide-it;
+  }
+}
