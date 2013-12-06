@@ -68,9 +68,6 @@
 }
 
 @mixin hide-it {
-  height: 0;
-  padding: 0;
-  width: 0 !important;
   position: absolute;
   -webkit-transform: translate3d(-9999rem,0,0);
   -moz-transform: translate3d(-9999rem,0,0);
