@@ -1,18 +1,17 @@
 {
   "name": "generator-castrum",
-  "version": "0.0.0",
-  "description": "A Yeoman generator for creating a Sass responsive grid system for HTML5 Apps",
+  "version": "0.1.0",
+  "description": "A bloat free Sass responsive grid system and thats it!",
   "keywords": [
-    "yeoman-generator", "sass", "responsive", "gridsystem", "compass"
+    "yeoman-generator", "sass", "responsive", "grid system", "grid", "scss", "responsive grid", "css3", "ui", "design", "html5"
   ],
   "homepage": "https://github.com/yeti-media/generator-castrum",
   "bugs": "https://github.com/yeti-media/generator-castrum/issues",
   "author": {
     "name": "Nick Treadway",
-    "email": "rnt@yeti-media.com",
     "url": "https://github.com/yeti-media"
   },
-  "main": "app/index.js",
+  "main": "app/styles/castrum",
   "repository": {
     "type": "git",
     "url": "git://github.com/yeti-media/generator-castrum.git"
