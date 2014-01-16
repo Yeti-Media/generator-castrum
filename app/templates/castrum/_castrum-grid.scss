@@ -17,6 +17,8 @@
   width: auto;
   margin: 0 $column;
   -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 [class^="c-"] {
@@ -24,8 +26,13 @@
   float: left;
   min-height: 1rem;
   padding: $padding;
-  @include transition(all .2s ease-out);
-  @include box-sizing(border-box);
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*

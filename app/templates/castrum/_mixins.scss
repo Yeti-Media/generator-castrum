@@ -64,7 +64,8 @@
 @mixin show-it {
   height: auto;
   visibility: visible;
-  @include opacity(1);
+  filter: alpha(Opacity=1);
+  opacity: 1;
 }
 
 @mixin hide-it {
@@ -72,7 +73,8 @@
   -webkit-transform: translate3d(-9999rem,0,0);
   -moz-transform: translate3d(-9999rem,0,0);
   transform: translate3d(-9999rem,0,0);
-  @include opacity(0);
+  filter: alpha(Opacity=0);
+  opacity: 0;
 }
 
 // Castrum grid
