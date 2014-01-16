@@ -39,9 +39,6 @@ CastrumGenerator.prototype.askFor = function askFor() {
 CastrumGenerator.prototype.app = function app() {
   this.mkdir('app');
   this.mkdir('app/styles/castrum');
-
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
 };
 
 CastrumGenerator.prototype.projectfiles = function projectfiles() {
@@ -50,6 +47,4 @@ CastrumGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('castrum/_state.scss', 'app/styles/castrum/_state.scss');
   this.copy('castrum/_variables.scss', 'app/styles/castrum/_variables.scss');
   this.copy('castrum/castrum.scss', 'app/styles/castrum/castrum.scss');
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
 };

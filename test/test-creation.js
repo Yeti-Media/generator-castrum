@@ -22,8 +22,6 @@ describe('castrum generator', function () {
     it('creates expected files', function (done) {
         var expected = [
             // add files you expect to exist here.
-            '.jshintrc',
-            '.editorconfig',
             'app/styles/castrum/_castrum-grid.scss',
             'app/styles/castrum/_mixins.scss',
             'app/styles/castrum/_state.scss',
