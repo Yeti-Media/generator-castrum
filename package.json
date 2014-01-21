@@ -9,6 +9,7 @@
   "bugs": "https://github.com/yeti-media/generator-castrum/issues",
   "author": {
     "name": "Nick Treadway",
+    "email": "rnt@yeti-media.com",
     "url": "https://github.com/yeti-media"
   },
   "main": "app/styles/castrum",
