@@ -1,6 +1,6 @@
 {
   "name": "generator-castrum",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A bloat free Sass responsive grid system and thats it!",
   "keywords": [
     "yeoman-generator", "sass", "responsive", "grid system", "grid", "scss", "responsive grid", "css3", "ui", "design", "html5"
